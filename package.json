@@ -2,13 +2,9 @@
   "name": "adam",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": "https://github.com/mayrinkdotcom/adam.git",
   "author": "João Pedro Mayrink <joaopmayrinkj@gmail.com>",
   "license": "MIT",
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "devDependencies": {
     "@commitlint/cli": "^12.1.1",
     "@commitlint/config-conventional": "^12.1.1",
