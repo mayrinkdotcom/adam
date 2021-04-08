@@ -1,0 +1,17 @@
+{
+  "name": "adam",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "João Pedro Mayrink <joaopmayrinkj@gmail.com>",
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "husky": "^6.0.0"
+  }
+}

@@ -1,3 +1,4 @@
 src/python/venv/
 src/python/.idea/
 src/python/__pycache__/
+node_modules
