@@ -5,6 +5,9 @@
   "repository": "https://github.com/mayrinkdotcom/adam.git",
   "author": "João Pedro Mayrink <joaopmayrinkj@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "commit": "cz"
+  },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
