@@ -7,6 +7,7 @@
 # pip install SpeechRecognition
 # pip install gTTS
 # pip install wikipedia
+# pip install pygame
 
 # import the libraries
 import speech_recognition as sr
@@ -21,7 +22,7 @@ import random
 import wikipedia
 
 from pygame import mixer, event
-from config import *
+from python.config_en import *
 
 
 # ignore any warning messages
@@ -42,7 +43,7 @@ def recordAudio():
     # use Google's speech recognition
     data = ''
     try:
-        data = r.recognize_google(audio)
+        data = r.recognize_google(audio, language=LANG)
         print('You said ' + data)
     except sr.UnknownValueError:  # check for unknowns errors
         print('Google speech recognition could not understand the audio, unknown error')
@@ -71,7 +72,7 @@ def assistantResponse(text):
         print('No text to convert')
         return
 
-    myobj = gTTS(text=text, lang='en', slow=False)
+    myobj = gTTS(text=text, lang=LANG, slow=False)
 
     # save the converted audio to a file
     audioName = 'assistant_response.mp3'
