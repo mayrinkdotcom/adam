@@ -4,7 +4,7 @@ A.D.A.M. é um projeto open-source que visa a construção de um assistente virt
 
 ## Sumário
   - [Getting Started](#getting-started)
-  - [Versionamento](versionamento)
+  - [Versionamento](#versionamento)
 
 ## Getting Started
 
